@@ -1,0 +1,27 @@
+{
+  "identity": "post",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "posts"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content":{
+      "type": "string"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
